@@ -1,5 +1,5 @@
 # CRM
-This project is for China Mobile's CRM system, which needs a new H5 refactor via Vuejs
+This project is for China Mobile's（中国移动通信集团上海有限分公司） CRM system, which needs a new H5 refactor via Vuejs
 
 ## Kindly Informing Everyone
 The config files contain database address and password for high-level user account, please make sure to keep the project private.
