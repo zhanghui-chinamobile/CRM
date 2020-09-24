@@ -1,0 +1,139 @@
+<template>
+  <section>
+    <el-col :span="24" class="toolbar">
+      <el-form :inline="true"  size="small">
+        <el-form-item label="流量池名称">
+          <el-input placeholder="请输入流量池名称"></el-input>
+        </el-form-item>
+      </el-form>
+    </el-col>
+    <el-table
+      ref="multipleTable"
+      :data="poolData"
+      tooltip-effect="dark"
+      style="width: 100%"
+      max-height="250"
+      @selection-change="onSelectPool">
+      <el-table-column
+        type="selection"
+        width="55">
+      </el-table-column>
+      <el-table-column
+        prop="name"
+        label="流量池名称">
+      </el-table-column>
+      <el-table-column
+        prop="state"
+        label="套餐状态">
+      </el-table-column>
+      <el-table-column
+        prop="effiDate"
+        label="生效时间"
+        show-overflow-tooltip>
+      </el-table-column>
+      <el-table-column
+        prop="disDate"
+        label="失效时间"
+        show-overflow-tooltip>
+      </el-table-column>
+    </el-table>
+    <br/>
+    <el-table
+      ref="multipleTable"
+      :data="prodData"
+      tooltip-effect="dark"
+      max-height="250"
+      style="width: 100%">
+      <el-table-column
+        width="55">
+      </el-table-column>
+      <el-table-column
+        prop="name"
+        label="产品名称">
+      </el-table-column>
+      <el-table-column
+        prop="state"
+        label="产品状态">
+      </el-table-column>
+      <el-table-column
+        prop="effiDate"
+        label="生效时间"
+        show-overflow-tooltip>
+      </el-table-column>
+      <el-table-column
+        prop="disDate"
+        label="失效时间"
+        show-overflow-tooltip>
+      </el-table-column>
+    </el-table>
+  </section>
+</template>
+
+<script type="text/ecmascript-6">
+    export default {
+        data() {
+          return{
+            poolData:[{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            }],
+            prodData:[{
+              name:"1111",
+              state:"111",
+              effiDate:"111",
+              disDate:"111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            },{
+              name:"1111",
+              state:"1111",
+              effiDate:"1111",
+              disDate:"1111"
+            }],
+          }
+      },
+      methods:{
+        onSelectPool(){
+        }
+      }
+    }
+</script>
+
+<style scoped>
+</style>
+
